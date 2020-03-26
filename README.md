@@ -1,1 +1,1 @@
-# Churn_prediction_model.gihub.io
+# Churn_prediction_model.github.io
