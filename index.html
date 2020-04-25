@@ -4,6 +4,7 @@
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.3, maxmum-scale=1.0, minimum-scale=0.3">
 
 		<title>Churn prediction model</title>
 
@@ -12,9 +13,12 @@
 			body
 			{
 				text-align:center;
-				width:1100px;
 				margin:0 auto ;
 				background-color:white;
+				min-width:1000px;
+				overflow：auto;
+				position:relative;
+
 			}
 			p{
 				line-height:150%;
@@ -26,6 +30,7 @@
 			#left
 			{
 				line-height:180%;
+				font-size: 15px;
 			}
 			#header
 			{
@@ -54,7 +59,7 @@
 
 		</div>
 	<!-- 左侧 -->
-		<div id="left" style="width:20%;position:absolute;left:10px;text-align:left;">
+		<div id="left" style="width:20%;position:absolute;left:-10px;text-align:left;">
 			<h3 align = "center"><b>Contents</b></span></h3>
 			<ul>
 			<li class="toclevel-1 tocsection-1"><a href="#Abstract"><span class="tocnumber">1.</span> <span class="toctext"><b>Abstract</b></span></a></li>
@@ -71,7 +76,7 @@
 
 		</div>
 		<!--			中部 center				-->
-		<div align ="left" id="contain" style="width:80%;border-left:1px solid #999;padding:18px;position:absolute;right:10px;" >
+		<div align ="left" id="contain" style="width:77%;border-left:1px solid #999;padding:18px;position:absolute;right:10px;" >
 			<div><p>Predictive modeling refers to use statistics to predict outcomes.The holder usually wants to predict the trend or situation in the future, it, however, can be applied to any type of unknown event<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>.
 
 				<b>This model</b> is used to predict the customer churn in retirement segment and identify the indicators of churn rate through  <a href="https://en.wikipedia.org/wiki/Big_data" class="mw-redirect" title="Big Data">Big Data</a> analysis involving a data mining approach named <a href="https://en.wikipedia.org/wiki/Decision_tree" class="mw-redirect" title="Decision Tree">Decision Tree</a> such as Classfication and Regression Tree (CRT)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>.</p>
@@ -89,8 +94,11 @@
 				<p>Through the techniques of big data analysis in terms of decision tree and regression analysis, this research constructs a churn model for prediction fundamental on a dataset containing mass-affluent customers from retirement whose accuracy is beneficial to precise of retention activities in the future churners for companies. Besides, there are four different categories of clients in the model: churned, not churned, moderately churned and maintained customers, which assist to make a corresponding strategy to sustain customers.
 				</p>
 				<h2><span class="mw-headline" id="Findings"><b>Findings</b></span></h2>
-				<p>1) <b><i>The rate of attrition</i></b> reaches the zenith after retirements between two years to three years.
+				<div class ="box"><p>1) <b><i>The rate of attrition</i></b> reaches the zenith after retirements in the second year.
 				<img src="Fig12.jpg" width="500" height="300">
+				</div>
+				<style>.box{width:90%}.box img{width:50% height:30%}</style>
+
 				</p><p>2) <b><i>The churn rate</i></b> can be significantly affected by both the <b><i>length</i></b> and <b><i>strength</i></b> of the banking correlation because the P-value is less than 0.0001.
 				</p><p>3) Contrast to mass affluent clients, <b><i>non-mass affluent customers</i></b> agitate at a more rapid rate.
 				</p><p>4) Neither the online purchase nor the page view has impacts on the rate of churn.
