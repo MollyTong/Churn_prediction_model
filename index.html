@@ -1,125 +1,129 @@
+<!doctype html>
+<html>
+<br/><br/>
+	<head>
 
-<!DOCTYPE html>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<html class="client-nojs" lang="en" dir="ltr">
+		<title>Churn prediction model</title>
 
-<head>
+		<style type="text/css">
 
-<meta charset="UTF-8"/>
+			body
+			{
+				text-align:center;
+				width:1100px;
+				margin:0 auto ;
+				background-color:white;
+			}
+			p{
+				line-height:150%;
+			}
+			li{
+				line-height:150%;
+			}
 
-<title>Churn prediction model - Wikipedia</title>
+			#left
+			{
+				line-height:180%;
+			}
+			#header
+			{
 
+			}
+			#contain
+			{
 
-<h1 id="firstHeading" class="firstHeading" lang="en">Churn prediction model</h1>
+			}
+			#bottom
+			{
 
-<hr/>
+			}
 
-<div id="bodyContent" class="mw-body-content">
-
-<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
-
-<div id="contentSub"></div>
-
-
-<p>Predictive modeling refers to use statistics to predict outcomes.The holder usually wants to predict the trend or situation in the future, it, however, can be applied to any type of unknown event<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>.
-
-<b>This model</b> is used to predict the customer churn in retirement segment and identify the indicators of churn rate through <a href="/wiki/Big_data" title="big data">big data</a> analysis involving a data mining approach named <a href="/wiki/Decision_tree" title="Decision Tree">Decision Tree</a> such as Classfication and Regression Tree(CRT).
-</p>
-
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
-<hr/>
-
-<ul>
-
-<li class="toclevel-1 tocsection-1"><a href="#Abstract"><span class="tocnumber">1</span> <span class="toctext">Abstract</span></a></li>
-
-<li class="toclevel-1 tocsection-2"><a href="#Introduction"><span class="tocnumber">2</span> <span class="toctext">Introduction</span></a>
-
-<ul>
-
-<li class="toclevel-2 tocsection-3"><a href="#Background"><span class="tocnumber">2.1</span> <span class="toctext">Background</span></a></li>
-
-<li class="toclevel-2 tocsection-4"><a href="#Methodology"><span class="tocnumber">2.2</span> <span class="toctext">Methodology</span></a></li>
-
-
-
-</ul>
-
-</li>
-
-<li class="toclevel-1 tocsection-5"><a href="#Findings"><span class="tocnumber">3</span> <span class="toctext">Findings</span></a></li>
-
-<li class="toclevel-1 tocsection-6"><a href="#Conclusions"><span class="tocnumber">4</span> <span class="toctext">Conclusions</span></a></li>
-
-<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-
-</ul>
-
-</div>
+	</style>
+	</head>
 
 
+	<body>
+	<!--				首部 header				-->
+	  <div id="header">
+		<h1 align="center" id="firstHeading" class="firstHeading" lang="en">Churn prediction model</h1>
+		<br />
+		<hr width="100%"/>
+		<hr />
 
-<h2><span class="mw-headline" id="Abstract">Abstract</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=1" title="Edit section: Abstract">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<hr/>
-<p>Recently, resulting from the developing technology as well as the availability of various products and services, the changing options and expectations of customers have generated a highly competitive situation in the financial industry, including the threats and competition from direct competitors and new entrants.
+		</div>
+	<!-- 左侧 -->
+		<div id="left" style="width:20%;position:absolute;left:10px;text-align:left;">
+			<h3 align = "center"><b>Contents</b></span></h3>
+			<ul>
+			<li class="toclevel-1 tocsection-1"><a href="#Abstract"><span class="tocnumber">1.</span> <span class="toctext"><b>Abstract</b></span></a></li>
+			<li class="toclevel-1 tocsection-2"><a href="#Introduction"><span class="tocnumber">2.</span> <span class="toctext"><b>Introduction</b></span></a>
+			<ul>
+			<li class="toclevel-2 tocsection-3"><a href="#Background"><span class="tocnumber">2.1</span> <span class="toctext"><b>Background</b></span></a></li>
+			<li class="toclevel-2 tocsection-4"><a href="#Methodology"><span class="tocnumber">2.2</span> <span class="toctext"><b>Methodology</b></span></a></li>
+			</ul>
+			</li>
+			<li class="toclevel-1 tocsection-5"><a href="#Findings"><span class="tocnumber">3.</span> <span class="toctext"><b>Findings</b></span></a></li>
+			<li class="toclevel-1 tocsection-6"><a href="#Conclusions"><span class="tocnumber">4.</span> <span class="toctext"><b>Conclusions</b></span></a></li>
+			<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5.</span> <span class="toctext"><b>References</b></span></a></li>
+			</ul>
 
-</p>
+		</div>
+		<!--			中部 center				-->
+		<div align ="left" id="contain" style="width:80%;border-left:1px solid #999;padding:18px;position:absolute;right:10px;" >
+			<div><p>Predictive modeling refers to use statistics to predict outcomes.The holder usually wants to predict the trend or situation in the future, it, however, can be applied to any type of unknown event<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>.
 
-</p><p>The principal objective is to create a model to predict chum and discover the impact of individual behaviours from different aspects in this industry through big data analysis, which includes the integration of archival and unstructured data from websites, page views and phone records. It applied both the Datameer tool and the SAS business intelligence system to achieve the goal with more than 3 million information in the retiree section of the Canadian bank between 2011 and 2015.
-<br></br>
+				<b>This model</b> is used to predict the customer churn in retirement segment and identify the indicators of churn rate through  <a href="https://en.wikipedia.org/wiki/Big_data" class="mw-redirect" title="Big Data">Big Data</a> analysis involving a data mining approach named <a href="https://en.wikipedia.org/wiki/Decision_tree" class="mw-redirect" title="Decision Tree">Decision Tree</a> such as Classfication and Regression Tree (CRT)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>.</p>
 
-<h2><span class="mw-headline" id="Introduction">Introduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=2" title="Edit section: Introduction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<hr/>
-<h3><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=3" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+				<h2><span class="mw-headline" id="Abstract"><b>Abstract</b></span></h2>
+				<p>Recently, resulting from the developing technology as well as the availability of various products and services, the changing options and expectations of customers have generated a highly competitive situation in the financial industry, including the threats and competition from direct competitors and new entrants.
 
-<p>In the contemporary society, because of the threats and disruption from competitors, the majority of incorporation consider the client retention rate as the most primary priority to maintain competitive advantages. Customer churn prediction, however, is one of the fundamentals of Customer Relationship Management (CRM) who sponsors new research to evaluate a variety of marketing solutions to maximize the retention rate. Additionally, the churn rate refers to the annual per cent of terminating the business relationship or ceasing the service.
-</p>
+				</p>
+				<p class="mw-empty-elt"></p><p>The principal objective is to create a model to predict churn and discover the impact of individual behaviours from different aspects in this industry through big data analysis, which includes the integration of archival and unstructured data from websites, page views and phone records. It applied both the Datameer tool and the SAS business intelligence system to achieve the goal with more than 3 million information in the retiree section of the Canadian bank between 2011 and 2015.
+				</p><h2><span class="mw-headline" id="Introduction"><b>Introduction</b></span></h2>
+				<h3><span class="mw-headline" id="Background"><b>Background</b></span></h3>
+				<p>In the contemporary society, because of the threats and disruption from competitors, the majority of incorporation consider the client retention rate as the most primary priority to maintain competitive advantages. Customer churn prediction, however, is one of the fundamentals of Customer Relationship Management (CRM) who sponsors new research to evaluate a variety of marketing solutions to maximize the retention rate. Additionally, the churn rate refers to the annual per cent of terminating the business relationship or ceasing the service.
+				</p>
+				<h3><span class="mw-headline" id="Methodology"><b>Methodology</b></span></h3>
+				<p>Through the techniques of big data analysis in terms of decision tree and regression analysis, this research constructs a churn model for prediction fundamental on a dataset containing mass-affluent customers from retirement whose accuracy is beneficial to precise of retention activities in the future churners for companies. Besides, there are four different categories of clients in the model: churned, not churned, moderately churned and maintained customers, which assist to make a corresponding strategy to sustain customers.
+				</p>
+				<h2><span class="mw-headline" id="Findings"><b>Findings</b></span></h2>
+				<p>1) <b><i>The rate of attrition</i></b> reaches the zenith after retirements between two years to three years.
+				<img src="Fig12.jpg" width="500" height="300">
+				</p><p>2) <b><i>The churn rate</i></b> can be significantly affected by both the <b><i>length</i></b> and <b><i>strength</i></b> of the banking correlation because the P-value is less than 0.0001.
+				</p><p>3) Contrast to mass affluent clients, <b><i>non-mass affluent customers</i></b> agitate at a more rapid rate.
+				</p><p>4) Neither the online purchase nor the page view has impacts on the rate of churn.
+				</p><p>5) Due to the slight gap of the attrition rate between online customers and non-online clients, it can not be concluded that the behaviours on the internet result in a lower rate.
+				</p>
+				<h2><span class="mw-headline" id="Conclusions"><b>Conclusions</b></span></h2>
+				<p>1) Both the frequency of visiting other websites and the historic period with the bank are indicatives of options to churn.
 
+				</p><p>2) Compared with traditional churn prediction models, it improved the outcome by 175 per cent through the combination of CRT and linear regression analysis.
+				</p><p>3) Based on the data analysis, the correlation between the behaviour of customers and churning decisions plays a significant role, which will cause more accurate prediction and identification of potential churners and then result in more successful strategies.
+				</p><p>4) The mass-affluent customers are over two times to retire in the target bank but under two times to churn from it. Compared with mass retail, despite the lower rate of attrition, mass-affluent accounts for such a large proportion (a multi-billion dollar market) that affects considerably the profitability of the bank.
+				</p><p>5) Since those who own longer occupation and tight relationships with the bank are more impossible to churn, the consolidation of the correlation will decrease the proportion of attrition.
+				</p>
+				<h2><span class="mw-headline" id="References"><b>References</b></span></h2>
+				<div class="mw-references-wrap"><ol class="references">
+					<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Finlay, S. (2014). <i>Predictive Analytics, Data Mining and Big Data. Myths, Misconceptions and Methods</i>. <a href="https://en.wikipedia.org/wiki/Palgrave_Macmillan" title="Palgrave Macmillan">Palgrave_Macmillan</a>. p.&#160;237.<a href="https://en.wikipedia.org/wiki/Wikipedia:ISBN" class="mw-redirect" title="ISBN">ISBN</span>
+					</li>
+					<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Shirazi, F., &amp; Mohammadi, M. (2019). A big data analytics model for customer churn prediction in the retiree segment.&#160;<i>International Journal of Information Management, 48,</i> 238–253. <a rel="nofollow" class="external free" href="https://doi.org/10.1016/j.ijinfomgt.2018.10.005">https://doi.org/10.1016/j.ijinfomgt.2018.10.005</a></span>
+					</li>
 
-<h3><span class="mw-headline" id="Methodology">Methodology</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=4" title="Edit section: Methodology">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
-
-<p>Through the techniques of big data analysis in terms of decision tree and regression analysis, this research constructs a churn model for prediction fundamental on a dataset containing mass-affluent customers from retirement whose accuracy is beneficial to precise of retention activities in the future churners for companies. Besides, there are four different categories of clients in the model: churned, not churned, moderately churned and maintained customers, which assist to make a corresponding strategy to sustain customers.
-</p>
-
-
-<h2><span class="mw-headline" id="Findings">Findings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=5" title="Edit section: Findings">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<hr/>
-<p>1) <b><i>The rate of attrition</i></b> reaches the zenith after retirements between two years to three years.
-
-</p><p>2) <b><i>The churn rate</i></b> can be significantly affected by both the <b><i>length</i></b> and <b><i>strength</i></b> of the banking correlation because the P-value is less than 0.0001.
-
-</p><p>3) Contrast to mass affluent clients, <b><i>non-mass affluent customers</i></b> agitate at a more rapid rate.
-
-</p><p>4) Neither the online purchase nor the page view has impacts on the rate of churn.
-
-</p><p>5) Due to the slight gap of the attrition rate between online customers and non-online clients, it can not be concluded that the behaviours on the internet result in a lower rate.
-
-</p>
-
-
-<h2><span class="mw-headline" id="Conclusions">Conclusions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=6" title="Edit section: Conclusions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<hr/>
-<p>1) Both the frequency of visiting other websites and the historic period with the bank are indicatives of options to churn.
-
-</p><p>2) Compared with traditional churn prediction models, it improved the outcome by 175 per cent through the combination of CRT and linear regression analysis.
-
-</p><p>3) Based on the data analysis, the correlation between the behaviour of customers and churning decisions plays a significant role, which will cause more accurate prediction and identification of potential churners and then result in more successful strategies.
-
-</p><p>4) The mass-affluent customers are over two times to retire in the target bank but under two times to churn from it. Compared with mass retail, despite the lower rate of attrition, mass-affluent accounts for such a large proportion (a multi-billion dollar market) that affects considerably the profitability of the bank.
-
-</p><p>5) Since those who own longer occupation and tight relationships with the bank are more impossible to churn, the consolidation of the correlation will decrease the proportion of attrition.
-
-</p>
+				</div>
+		</div >
 
 
-<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Churn_prediction_model&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<hr/>
-<div class="mw-references-wrap"><ol class="references">
+
+	<!--				底部	bottom			 -->
+		<br/><br/><br/>
+		<div id="bottom" align = "center">
+			<p>2020 Writen by Molly Tong</p>
+		</div>
 
 
-  <li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Shirazi, F., & Mohammadi, M. (2019). A big data analytics model for customer churn prediction in the retiree segment.  <i>International Journal of Information Management, 48,</i> 238–253. <a rel="nofollow" class="external text" href="https://doi.org/10.1016/j.ijinfomgt.2018.10.005">10.1016/j.ijinfomgt.2018.10.005</a>
-  </span>
-</li>
+	</body>
 
-<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Finlay, Steven (2014). <i>Predictive Analytics, Data Mining and Big Data. Myths, Misconceptions and Methods</i> (1st ed.). <a href="/wiki/Palgrave_Macmillan" title="Palgrave Macmillan">Palgrave Macmillan</a>. p.&#160;237. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1137379276" title="Special:BookSources/978-1137379276"><bdi>978-1137379276</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Predictive+Analytics%2C+Data+Mining+and+Big+Data.+Myths%2C+Misconceptions+and+Methods&amp;rft.pages=237&amp;rft.edition=1st&amp;rft.pub=Palgrave+Macmillan&amp;rft.date=2014&amp;rft.isbn=978-1137379276&amp;rft.aulast=Finlay&amp;rft.aufirst=Steven&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APredictive+modelling" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r935243608"/></span>
-</li>
+
+</html>
