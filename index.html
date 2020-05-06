@@ -12,14 +12,17 @@
 
 			body
 			{
+        width: 90%;
 				text-align:center;
 				margin:0 auto ;
-				background-color:white;
 				min-width:1000px;
 				overflow：auto;
 				position:relative;
-
+        background-color:lightblue;
+        font:1em Arial, Helvetica, sans-serif;
 			}
+
+
 			p{
 				line-height:150%;
 			}
@@ -29,19 +32,68 @@
 
 			#left
 			{
-				line-height:180%;
+        width:20%;
+        margin:30px 5px ;
+        line-height:180%;
 				font-size: 15px;
-			}
-			#header
-			{
+        background-color:white;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-left:1px solid #999;
+        border-right:1px solid #999;
+        border-top:1px solid #999;
+        border-bottom:1px solid #999;
+
 
 			}
+
+      #lefttwo
+      {
+        width:20%;
+        margin:10px -2px ;
+        line-height:180%;
+        font-size: 15px;
+        background-color:white;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-left:1px solid #999;
+        border-right:1px solid #999;
+        border-top:1px solid #999;
+        border-bottom:1px solid #999;
+
+
+      }
+
 			#contain
 			{
+        width:72%;
+        background-color:white;
+        margin:30px 5px ;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        border-left:1px solid #999;
+        border-right:1px solid #999;
+        border-top:1px solid #999;
+        border-bottom:1px solid #999;
+
+        overflow: auto;
+
 
 			}
 			#bottom
 			{
+        background-color:white;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
 
 			}
 
@@ -51,15 +103,8 @@
 
 	<body>
 	<!--				首部 header				-->
-	  <div id="header">
-		<h1 align="center" id="firstHeading" class="firstHeading" lang="en">Churn prediction model</h1>
-		<br />
-		<hr width="100%"/>
-		<hr />
-
-		</div>
 	<!-- 左侧 -->
-		<div id="left" style="width:20%;position:absolute;left:-10px;text-align:left;">
+		<div id="left" style="position:fixed;text-align:left;color:gray;">
 			<h3 align = "center"><b>Contents</b></span></h3>
 			<ul>
 			<li class="toclevel-1 tocsection-1"><a href="#Abstract"><span class="tocnumber">1.</span> <span class="toctext"><b>Abstract</b></span></a></li>
@@ -74,9 +119,27 @@
 			<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5.</span> <span class="toctext"><b>References</b></span></a></li>
 			</ul>
 
+      <div id="lefttwo" style="position:fixed;text-align:left;color:gray;">
+        <h3 align = "center"><b>Information</b></span></h3>
+        <ul>
+          <li class="toclevel-1 tocsection-1"><b>Name: Duo Tong</b></li>
+          <li class="toclevel-1 tocsection-2"><b>StudentID: 19075095</b></li>
+          <li class="toclevel-1 tocsection-3"><b>Course: Esystem</b></li>
+          <li class="toclevel-1 tocsection-4"><b>CourseID: Esystem</b></li>
+          <li class="toclevel-1 tocsection-5"><b>Assignment: Static website</b></li>
+          <li class="toclevel-1 tocsection-6"><b>Lecturer: Boris</b></li>
+          <li class="toclevel-1 tocsection-7"><b>Date: 05.08.2020</b></li>
+        <ul>
+
+      </div>
 		</div>
+
+
+
+
 		<!--			中部 center				-->
-		<div align ="left" id="contain" style="width:77%;border-left:1px solid #999;padding:18px;position:absolute;right:10px;" >
+		<div align ="left" id="contain" style="padding:18px;position:absolute;right:10px;" >
+			<h1 align="center" id="firstHeading" class="firstHeading" lang="en">Churn prediction model</h1>
 			<div><p>Predictive modeling refers to use statistics to predict outcomes.The holder usually wants to predict the trend or situation in the future, it, however, can be applied to any type of unknown event<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>.
 
 				<b>This model</b> is used to predict the customer churn in retirement segment and identify the indicators of churn rate through  <a href="https://en.wikipedia.org/wiki/Big_data" class="mw-redirect" title="Big Data">Big Data</a> analysis involving a data mining approach named <a href="https://en.wikipedia.org/wiki/Decision_tree" class="mw-redirect" title="Decision Tree">Decision Tree</a> such as Classfication and Regression Tree (CRT)<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>.</p>
